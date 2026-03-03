@@ -1,0 +1,26 @@
+name: Publish Skill
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish-skill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish to ClawHub
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          npx clawhub publish \
+            --version "$VERSION" \
+            --tags "latest,crypto,defi,meme,solana,trading" \
+            --name "KryptoGO Meme Trader" \
+            "./skill"
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
