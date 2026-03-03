@@ -1,6 +1,6 @@
 ---
 name: kryptogo-meme-trader
-version: "2.5.5"
+version: "2.5.6"
 description: Analyze and trade meme coins using KryptoGO's on-chain cluster analysis platform. Covers wallet clustering, address labels, accumulation/distribution detection, and automated swap execution via the Agent Trading API.
 author: KryptoGO
 license: MIT
@@ -46,7 +46,8 @@ metadata:
       trade_confirmation: required_by_default
       autonomous_trading: opt_in
       credential_access: environment_variables_only
-      credential_file_read: false
+      credential_file_read: setup_script_only
+      credential_file_read_note: "Only scripts/setup.py reads and writes ~/.openclaw/workspace/.env for initial keypair generation and address repair. All other scripts access credentials exclusively via pre-loaded environment variables."
       local_signing_only: true
 ---
 
@@ -107,7 +108,8 @@ Send SOL to the agent's public address (minimum 0.1 SOL).
 - **NEVER** print, log, or include private keys in any message or CLI argument
 - **NEVER** accept secrets pasted directly in chat — instruct users to set them in `.env`
 - **NEVER** use the Read tool on `.env` — load credentials via `source` command only
-- Scripts do NOT read `.env` directly — all credentials are accessed via environment variables only, which must be pre-loaded by the caller
+- Runtime scripts do NOT read `.env` directly — all credentials are accessed via environment variables only, which must be pre-loaded by the caller (`source ~/.openclaw/workspace/.env`)
+- **Exception:** `scripts/setup.py` reads and writes `.env` for initial keypair generation and address repair — this is the only script that touches credential files
 - Private key stays in memory only during local signing — never sent to any server
 
 ---
@@ -183,9 +185,9 @@ If any limit is hit, the agent **must stop and notify the user**.
 
 ### Credential Isolation
 
-Scripts in this skill do NOT read `.env` files directly. All credentials are accessed via environment variables only, which must be pre-loaded by the caller (`source ~/.openclaw/workspace/.env`). This ensures no script can independently access or exfiltrate credential files.
+Runtime scripts in this skill do NOT read `.env` files directly. All credentials are accessed via environment variables only, which must be pre-loaded by the caller (`source ~/.openclaw/workspace/.env`). This ensures no runtime script can independently access or exfiltrate credential files.
 
-**Exception:** `scripts/setup.py` writes `.env` (its entire purpose).
+**Exception:** `scripts/setup.py` reads and writes `.env` — it loads existing keys to avoid regeneration, backs up `.env` before changes, and writes new keypair entries. This is the only script that touches credential files, and it runs only during initial setup or explicit `--force` regeneration.
 
 ---
 
