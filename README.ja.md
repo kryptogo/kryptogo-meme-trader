@@ -28,6 +28,27 @@
 
 > *人は嘘をつくかもしれないが、オンチェーンデータは嘘をつかない。*
 
+## 前提条件
+
+- [kryptogo.xyz/account](https://kryptogo.xyz/account) から API キーを取得
+- Python 3.10+
+
+## Skill
+
+### OpenClaw
+
+```bash
+npx clawhub install kryptogo-meme-trader
+```
+
+### Claude Code
+
+```bash
+npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
+```
+
+インストール後、Claude Code を再起動してアクティベートしてください。詳細なドキュメントは [skill/SKILL.md](./skill/SKILL.md) をご覧ください。
+
 ## MCP サーバー
 
 ### Claude Code クイックスタート
@@ -62,33 +83,12 @@ claude mcp add kryptogo-meme-trader \
 }
 ```
 
-## Skill
-
-### OpenClaw
-
-```bash
-npx clawhub install kryptogo-meme-trader
-```
-
-### Claude Code
-
-```bash
-npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
-```
-
-インストール後、Claude Code を再起動してアクティベートしてください。詳細なドキュメントは [skill/SKILL.md](./skill/SKILL.md) をご覧ください。
-
 ## ドキュメント
 
 | | English | 繁體中文 | 简体中文 |
 |---|---|---|---|
 | 製品ガイド | [User Guide](https://kryptogo.notion.site/Product-Guide-EN-26c3499de8a28179aafacb68304458ea) | [使用手冊](https://kryptogo.notion.site/kryptogo-xyz-usage-guide) | [使用手册](https://kryptogo.notion.site/kryptogo-xyz-productguide-zhcn) |
 | ホワイトペーパー | [PDF](https://wallet-static.kryptogo.com/public/whitepaper/kryptogo-xyz-whitepaper-v1.0.pdf) | [白皮書](https://kryptogo.xyz/whitepaper) | [白皮书](https://kryptogo.xyz/whitepaper) |
-
-## 前提条件
-
-- [kryptogo.xyz/account](https://kryptogo.xyz/account) から API キーを取得
-- Python 3.10+
 
 ## 環境変数
 
