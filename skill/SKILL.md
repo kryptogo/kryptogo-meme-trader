@@ -1,6 +1,6 @@
 ---
 name: kryptogo-meme-trader
-version: "2.5.1"
+version: "2.5.4"
 description: Analyze and trade meme coins using KryptoGO's on-chain cluster analysis platform. Covers wallet clustering, address labels, accumulation/distribution detection, and automated swap execution via the Agent Trading API.
 author: KryptoGO
 license: MIT

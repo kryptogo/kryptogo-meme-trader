@@ -4,7 +4,7 @@ from kryptogo_meme_trader.config import SOLANA_WALLET_ADDRESS
 
 
 def _get_ctx(ctx: Context) -> AppContext:
-    return ctx.session.server.lifespan_context
+    return ctx.request_context.lifespan_context
 
 
 @mcp.tool()

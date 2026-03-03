@@ -8,7 +8,7 @@ getcontext().prec = 28
 
 
 def _get_ctx(ctx: Context) -> AppContext:
-    return ctx.session.server.lifespan_context
+    return ctx.request_context.lifespan_context
 
 
 @mcp.tool()
