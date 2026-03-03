@@ -2,7 +2,31 @@
 
 [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
-AI-powered meme coin trading agent for Solana with multi-chain on-chain analysis.
+**The God's Eye of Meme Coins** — the first all-dimensional on-chain trading assistant.
+
+Smart Money Tracking · Market Maker Analysis · Whale Monitoring · Signal Alerts
+
+## Why KryptoGO
+
+| Capability | What It Does | Tool |
+|---|---|---|
+| **Proprietary Cluster Detection** | Precisely detect whale clusters among all holding addresses — see through accumulation and distribution at a glance | `analyze_token` |
+| **Cluster Position Trends** | Price sideways + cluster holdings rising = accumulation (bullish). Price rising + cluster holdings dropping = distribution (bearish) | `get_cluster_trends` |
+| **Hidden Position Reconstruction** | Reconstruct hidden positions from Jupiter limit orders and DCA buys — other tools show wallets as empty, we reveal the real holdings | `get_dca_limit_orders` |
+| **Network-wide Accumulation Signals** | First-stage captures rapid accumulation in new tokens, second-stage detects re-accumulation in established tokens | `get_signal_dashboard` |
+| **Comprehensive Address Labels** | Smart money, blue-chip whales, DEVs, snipers, bundled wallets and more — label coverage far exceeds Nansen | `get_token_wallet_labels` |
+
+### Reading Market Maker Operations
+
+Identify three key phases of whale operations through cluster position changes:
+
+| Phase | Price Action | Cluster Holdings | Signal |
+|---|---|---|---|
+| **Accumulation** | Sideways consolidation | Steadily rising | Bullish — whales quietly collecting |
+| **Pump** | Rapid surge | Holding at highs | Hold — whales haven't sold yet |
+| **Distribution** | Still near highs | Starting to decline | Exit — whales distributing to latecomers |
+
+> *People may lie, but on-chain data never does.*
 
 ## MCP Server
 
