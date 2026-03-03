@@ -46,6 +46,13 @@ npx clawhub install kryptogo-meme-trader
 
 See [skill/SKILL.md](./skill/SKILL.md) for full documentation.
 
+## Documentation
+
+| | English | 繁體中文 | 简体中文 |
+|---|---|---|---|
+| Product Guide | [User Guide](https://kryptogo.notion.site/Product-Guide-EN-26c3499de8a28179aafacb68304458ea) | [使用手冊](https://kryptogo.notion.site/kryptogo-xyz-usage-guide) | [使用手册](https://kryptogo.notion.site/kryptogo-xyz-productguide-zhcn) |
+| Whitepaper | [PDF](https://wallet-static.kryptogo.com/public/whitepaper/kryptogo-xyz-whitepaper-v1.0.pdf) | [白皮書](https://kryptogo.xyz/whitepaper) | [白皮书](https://kryptogo.xyz/whitepaper) |
+
 ## Prerequisites
 
 - API key from [kryptogo.xyz/account](https://kryptogo.xyz/account)

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "kryptogo-meme-trader"
-version = "2.5.4"
+version = "2.5.5"
 description = "KryptoGO MCP server for Solana meme coin analysis and trading"
 readme = "README.md"
 license = "MIT"
