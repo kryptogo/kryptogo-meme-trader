@@ -28,6 +28,27 @@
 
 > *人也许会说谎，但链上数据不会。*
 
+## 前置要求
+
+- 从 [kryptogo.xyz/account](https://kryptogo.xyz/account) 获取 API 密钥
+- Python 3.10+
+
+## Skill
+
+### OpenClaw
+
+```bash
+npx clawhub install kryptogo-meme-trader
+```
+
+### Claude Code
+
+```bash
+npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
+```
+
+安装后请重启 Claude Code 以启用。完整文档请参阅 [skill/SKILL.md](./skill/SKILL.md)。
+
 ## MCP 服务器
 
 ### Claude Code 快速开始
@@ -62,25 +83,12 @@ claude mcp add kryptogo-meme-trader \
 }
 ```
 
-## Claude Code Skill
-
-```bash
-npx clawhub install kryptogo-meme-trader
-```
-
-完整文档请参阅 [skill/SKILL.md](./skill/SKILL.md)。
-
 ## 文档
 
 | | English | 繁體中文 | 简体中文 |
 |---|---|---|---|
 | 产品指南 | [User Guide](https://kryptogo.notion.site/Product-Guide-EN-26c3499de8a28179aafacb68304458ea) | [使用手冊](https://kryptogo.notion.site/kryptogo-xyz-usage-guide) | [使用手册](https://kryptogo.notion.site/kryptogo-xyz-productguide-zhcn) |
 | 白皮书 | [PDF](https://wallet-static.kryptogo.com/public/whitepaper/kryptogo-xyz-whitepaper-v1.0.pdf) | [白皮書](https://kryptogo.xyz/whitepaper) | [白皮书](https://kryptogo.xyz/whitepaper) |
-
-## 前置要求
-
-- 从 [kryptogo.xyz/account](https://kryptogo.xyz/account) 获取 API 密钥
-- Python 3.10+
 
 ## 环境变量
 
@@ -115,8 +123,8 @@ npx clawhub install kryptogo-meme-trader
 | 工具 | 说明 |
 |------|------|
 | `get_trending_tokens` | 获取跨链当前热门代币 |
-| `get_signal_dashboard` | 全网累积信号 — 内部人正在买入的代币（仅限 Pro/Alpha） |
-| `get_signal_history` | 浏览历史交易信号 |
+| `get_signal_dashboard` | 全网吸筹信号 — 内部人正在买入的代币（仅限 Pro/Alpha） |
+| `get_signal_history` | 获取代币过去发送的信号 |
 
 ### 投资组合 (2)
 
