@@ -21,6 +21,8 @@ jobs:
             --version "$VERSION" \
             --tags "latest,crypto,defi,meme,solana,trading" \
             --name "KryptoGO Meme Trader" \
+            --token "$CLAWHUB_TOKEN" \
+            --no-input \
             "./skill"
         env:
           CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
