@@ -64,11 +64,13 @@ claude mcp add kryptogo-meme-trader \
 
 ## Claude Code Skill
 
+Skill をインストールすると、Claude Code にエージェント最適化ワークフロー、取引ガードレール、自律機能が追加されます。
+
 ```bash
-npx clawhub install kryptogo-meme-trader
+npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
 ```
 
-詳細なドキュメントは [skill/SKILL.md](./skill/SKILL.md) をご覧ください。
+インストール後、Claude Code を再起動してアクティベートしてください。詳細なドキュメントは [skill/SKILL.md](./skill/SKILL.md) をご覧ください。
 
 ## ドキュメント
 

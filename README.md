@@ -64,11 +64,13 @@ claude mcp add kryptogo-meme-trader \
 
 ## Claude Code Skill
 
+Install the skill to give Claude Code agent-optimized workflows, trading guardrails, and autonomous capabilities.
+
 ```bash
-npx clawhub install kryptogo-meme-trader
+npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
 ```
 
-See [skill/SKILL.md](./skill/SKILL.md) for full documentation.
+Restart Claude Code after installation to activate. See [skill/SKILL.md](./skill/SKILL.md) for full documentation.
 
 ## Documentation
 
