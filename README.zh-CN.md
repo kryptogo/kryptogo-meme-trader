@@ -123,8 +123,8 @@ claude mcp add kryptogo-meme-trader \
 | 工具 | 说明 |
 |------|------|
 | `get_trending_tokens` | 获取跨链当前热门代币 |
-| `get_signal_dashboard` | 全网累积信号 — 内部人正在买入的代币（仅限 Pro/Alpha） |
-| `get_signal_history` | 浏览历史交易信号 |
+| `get_signal_dashboard` | 全网吸筹信号 — 内部人正在买入的代币（仅限 Pro/Alpha） |
+| `get_signal_history` | 获取代币过去发送的信号 |
 
 ### 投资组合 (2)
 
