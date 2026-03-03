@@ -1,0 +1,134 @@
+# KryptoGO Meme Trader
+
+[English](README.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
+
+AI 驱动的 Solana 迷因币交易代理，支持多链链上分析。
+
+## MCP 服务器
+
+### Claude Code 快速开始
+
+```bash
+claude mcp add kryptogo-meme-trader -e KRYPTOGO_API_KEY=your_key -- uvx kryptogo-meme-trader
+```
+
+### 启用交易功能
+
+```bash
+claude mcp add kryptogo-meme-trader \
+  -e KRYPTOGO_API_KEY=your_key \
+  -e SOLANA_PRIVATE_KEY=your_base58_key \
+  -e SOLANA_WALLET_ADDRESS=your_wallet \
+  -- uvx kryptogo-meme-trader
+```
+
+### Claude Desktop / Cursor / Windsurf
+
+```json
+{
+  "mcpServers": {
+    "kryptogo-meme-trader": {
+      "command": "uvx",
+      "args": ["kryptogo-meme-trader"],
+      "env": {
+        "KRYPTOGO_API_KEY": "your_key"
+      }
+    }
+  }
+}
+```
+
+## Claude Code Skill
+
+```bash
+npx clawhub install kryptogo-meme-trader
+```
+
+完整文档请参阅 [skill/SKILL.md](./skill/SKILL.md)。
+
+## 前置要求
+
+- 从 [kryptogo.xyz/account](https://kryptogo.xyz/account) 获取 API 密钥
+- Python 3.10+
+
+## 环境变量
+
+| 变量 | 必填 | 说明 |
+|------|------|------|
+| `KRYPTOGO_API_KEY` | 是 | 从 kryptogo.xyz 获取的 API 密钥 |
+| `SOLANA_PRIVATE_KEY` | 否 | 用于交易的 Base58 私钥 |
+| `SOLANA_WALLET_ADDRESS` | 否 | 用于投资组合/交易的钱包地址 |
+
+## 可用工具 (22)
+
+### 分析 (13)
+
+| 工具 | 说明 |
+|------|------|
+| `get_token_overview` | 获取代币综合概览，包含价格、市值及元数据 |
+| `analyze_token` | 深度分析代币的持有者分布、交易活动及风险信号 |
+| `get_cluster_trends` | 分析聪明钱集群趋势与动向 |
+| `get_balance_history` | 追踪钱包的历史余额变化 |
+| `get_balance_increase` | 识别余额大幅增加的钱包 |
+| `get_top_holders_snapshot` | 获取代币前几大持有者的当前快照 |
+| `get_historical_top_holders` | 查看历史前几大持有者数据的时间变化 |
+| `get_fresh_addresses` | 检测正在累积代币的新建钱包 |
+| `get_dca_limit_orders` | 查询代币的定投与限价单活动 |
+| `get_price_chart` | 获取 OHLCV 价格图表数据 |
+| `get_batch_prices` | 单次调用获取多个代币价格 |
+| `get_cluster_connections` | 绘制集群中钱包之间的连接关系 |
+| `get_wallet_assets` | 列出钱包的所有代币持有 |
+
+### 发现 (3)
+
+| 工具 | 说明 |
+|------|------|
+| `get_trending_tokens` | 获取跨链当前热门代币 |
+| `get_signal_dashboard` | 查看实时交易信号仪表盘 |
+| `get_signal_history` | 浏览历史交易信号 |
+
+### 投资组合 (2)
+
+| 工具 | 说明 |
+|------|------|
+| `get_account_info` | 获取账户信息，包含 API 使用量与方案等级 |
+| `get_portfolio` | 查看钱包投资组合及盈亏追踪 |
+
+### 交易 (1)
+
+| 工具 | 说明 |
+|------|------|
+| `swap_tokens` | 在 Solana 上执行代币交换 |
+
+### 标签与风险 (3)
+
+| 工具 | 说明 |
+|------|------|
+| `get_wallet_labels` | 获取钱包地址的标签与标记 |
+| `get_token_wallet_labels` | 获取与代币相关的已标记钱包 |
+| `check_rug_risk` | 评估代币的 Rug Pull 风险 |
+
+## 支持链
+
+| 区块链 | chain_id | 交易 |
+|--------|----------|------|
+| Solana | 501 | 支持 |
+| BSC | 56 | 仅分析 |
+| Base | 8453 | 仅分析 |
+| Monad | 143 | 仅分析 |
+
+## 方案等级
+
+| 等级 | 每日 API 调用数 | 交易手续费 | 信号 |
+|------|-----------------|------------|------|
+| Free | 50 | 1% | 无 |
+| Pro | 500 | 0.5% | 有 |
+| Alpha | 5,000 | 0% | 有 |
+
+## 安全性
+
+所有交易签名均在您的本地计算机上执行。您的私钥绝不会发送至 KryptoGO 服务器或任何第三方。MCP 服务器在本地构建交易，仅将已签名的交易提交至 Solana RPC 端点。
+
+## 许可证
+
+MIT
