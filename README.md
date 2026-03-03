@@ -4,7 +4,7 @@
 
 **The God's Eye of Meme Coins** — the first all-dimensional on-chain trading assistant.
 
-Smart Money Tracking · Market Maker Analysis · Whale Monitoring · Signal Alerts
+Smart Money Tracking · Whale & Insider Analysis · Whale Monitoring · Signal Alerts
 
 ## Why KryptoGO
 
@@ -16,7 +16,7 @@ Smart Money Tracking · Market Maker Analysis · Whale Monitoring · Signal Aler
 | **Network-wide Accumulation Signals** | First-stage captures rapid accumulation in new tokens, second-stage detects re-accumulation in established tokens | `get_signal_dashboard` |
 | **Comprehensive Address Labels** | Smart money, blue-chip whales, DEVs, snipers, bundled wallets and more — label coverage far exceeds Nansen | `get_token_wallet_labels` |
 
-### Reading Market Maker Operations
+### Reading Whale & Insider Operations
 
 Identify three key phases of whale operations through cluster position changes:
 
