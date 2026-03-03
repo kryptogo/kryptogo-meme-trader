@@ -164,6 +164,21 @@ claude mcp add kryptogo-meme-trader \
 | Pro | 1,000 | 0.5% | Yes |
 | Alpha | 5,000 | 0% | Yes |
 
+### Free Tier Limits
+
+| Tool | Free | Pro | Alpha |
+|------|------|-----|-------|
+| `analyze_token` | First 2 clusters | All clusters | All clusters |
+| `get_cluster_trends` | First 2 clusters | All clusters | All clusters |
+| `get_dca_limit_orders` | First 2 user clusters | All user clusters | All user clusters |
+| `get_balance_increase` | Top 20 addresses | All addresses | All addresses |
+| `get_fresh_addresses` | 10 addresses | All addresses | All addresses |
+| `get_historical_top_holders` | 20 addresses | All addresses | All addresses |
+| `get_top_holders_snapshot` | 20 addresses | All addresses | All addresses |
+| `get_balance_history` | 7 days; 1h, 4h, 1d intervals | 90 days; 5m, 15m, 1h, 4h, 1d intervals | All history; 1m, 5m, 15m, 1h, 4h, 1d intervals |
+| `get_signal_dashboard` | Not available | Full access | Full access |
+| `swap_tokens` | 1% fee | 0.5% fee | 0% fee |
+
 ## Security
 
 All transaction signing is performed locally on your machine. Your private key is never sent to KryptoGO servers or any third party. The MCP server constructs transactions locally and only submits signed transactions to the Solana RPC endpoint.

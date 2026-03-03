@@ -164,6 +164,21 @@ claude mcp add kryptogo-meme-trader \
 | Pro | 1,000 | 0.5% | あり |
 | Alpha | 5,000 | 0% | あり |
 
+### 無料プランの制限
+
+| ツール | Free | Pro | Alpha |
+|--------|------|-----|-------|
+| `analyze_token` | 最初の 2 クラスター | すべてのクラスター | すべてのクラスター |
+| `get_cluster_trends` | 最初の 2 クラスター | すべてのクラスター | すべてのクラスター |
+| `get_dca_limit_orders` | 最初の 2 ユーザークラスター | すべてのユーザークラスター | すべてのユーザークラスター |
+| `get_balance_increase` | 上位 20 アドレス | すべてのアドレス | すべてのアドレス |
+| `get_fresh_addresses` | 10 アドレス | すべてのアドレス | すべてのアドレス |
+| `get_historical_top_holders` | 20 アドレス | すべてのアドレス | すべてのアドレス |
+| `get_top_holders_snapshot` | 20 アドレス | すべてのアドレス | すべてのアドレス |
+| `get_balance_history` | 7 日間；1h, 4h, 1d 足 | 90 日間；5m, 15m, 1h, 4h, 1d 足 | 全履歴；1m, 5m, 15m, 1h, 4h, 1d 足 |
+| `get_signal_dashboard` | 利用不可 | フルアクセス | フルアクセス |
+| `swap_tokens` | 1% 手数料 | 0.5% 手数料 | 0% 手数料 |
+
 ## セキュリティ
 
 すべてのトランザクション署名はお使いのローカルマシン上で実行されます。秘密鍵が KryptoGO サーバーや第三者に送信されることはありません。MCP サーバーはローカルでトランザクションを構築し、署名済みトランザクションのみを Solana RPC エンドポイントに送信します。

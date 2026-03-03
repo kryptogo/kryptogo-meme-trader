@@ -164,6 +164,21 @@ claude mcp add kryptogo-meme-trader \
 | Pro | 1,000 | 0.5% | 有 |
 | Alpha | 5,000 | 0% | 有 |
 
+### 免费版限制
+
+| 工具 | Free | Pro | Alpha |
+|------|------|-----|-------|
+| `analyze_token` | 前 2 个集群 | 所有集群 | 所有集群 |
+| `get_cluster_trends` | 前 2 个集群 | 所有集群 | 所有集群 |
+| `get_dca_limit_orders` | 前 2 个用户集群 | 所有用户集群 | 所有用户集群 |
+| `get_balance_increase` | 前 20 个地址 | 所有地址 | 所有地址 |
+| `get_fresh_addresses` | 10 个地址 | 所有地址 | 所有地址 |
+| `get_historical_top_holders` | 20 个地址 | 所有地址 | 所有地址 |
+| `get_top_holders_snapshot` | 20 个地址 | 所有地址 | 所有地址 |
+| `get_balance_history` | 7 天内；1h, 4h, 1d 线 | 90 天内；5m, 15m, 1h, 4h, 1d 线 | 所有历史数据；1m, 5m, 15m, 1h, 4h, 1d 线 |
+| `get_signal_dashboard` | 不可用 | 完整功能 | 完整功能 |
+| `swap_tokens` | 1% 手续费 | 0.5% 手续费 | 0% 手续费 |
+
 ## 安全性
 
 所有交易签名均在您的本地计算机上执行。您的私钥绝不会发送至 KryptoGO 服务器或任何第三方。MCP 服务器在本地构建交易，仅将已签名的交易提交至 Solana RPC 端点。
