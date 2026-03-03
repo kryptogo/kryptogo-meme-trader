@@ -62,9 +62,15 @@ claude mcp add kryptogo-meme-trader \
 }
 ```
 
-## Claude Code Skill
+## Skill
 
-安裝 Skill 讓 Claude Code 獲得代理優化工作流程、交易護欄及自動化功能。
+### OpenClaw
+
+```bash
+npx clawhub install kryptogo-meme-trader
+```
+
+### Claude Code
 
 ```bash
 npx degit kryptogo/kryptogo-meme-trader/skill ~/.claude/skills/kryptogo-meme-trader
