@@ -66,7 +66,7 @@ npx clawhub install kryptogo-meme-trader
 | 工具 | 說明 |
 |------|------|
 | `get_token_overview` | 取得代幣綜合概覽，包含價格、市值及元資料 |
-| `analyze_token` | 深度分析代幣的持有者分佈、交易活動及風險訊號 |
+| `analyze_token` | 集群分析 — 將關聯錢包分組以揭示內部持倉（免費版僅顯示前 2 個集群） |
 | `get_cluster_trends` | 分析聰明錢集群趨勢與動向 |
 | `get_balance_history` | 追蹤錢包的歷史餘額變化 |
 | `get_balance_increase` | 識別餘額大幅增加的錢包 |
@@ -84,7 +84,7 @@ npx clawhub install kryptogo-meme-trader
 | 工具 | 說明 |
 |------|------|
 | `get_trending_tokens` | 取得跨鏈當前熱門代幣 |
-| `get_signal_dashboard` | 查看即時交易訊號儀表板 |
+| `get_signal_dashboard` | 全網累積信號 — 內部人正在買入的代幣（僅限 Pro/Alpha） |
 | `get_signal_history` | 瀏覽歷史交易訊號 |
 
 ### 投資組合 (2)
@@ -121,8 +121,8 @@ npx clawhub install kryptogo-meme-trader
 
 | 等級 | 每日 API 呼叫數 | 交易手續費 | 訊號 |
 |------|-----------------|------------|------|
-| Free | 50 | 1% | 無 |
-| Pro | 500 | 0.5% | 有 |
+| Free | 100 | 1% | 無 |
+| Pro | 1,000 | 0.5% | 有 |
 | Alpha | 5,000 | 0% | 有 |
 
 ## 安全性

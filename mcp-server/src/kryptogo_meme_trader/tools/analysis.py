@@ -20,7 +20,7 @@ async def get_token_overview(ctx: Context, token_address: str, chain_id: int = 5
 
 @mcp.tool()
 async def analyze_token(ctx: Context, token_address: str, chain_id: int = 501) -> dict:
-    """Full cluster analysis for a token — groups related wallets, shows insider holdings, market maker positions, and top holders.
+    """Full cluster analysis for a token — groups related wallets to reveal insider holdings, market maker positions, and top holders. Free tier only returns the first 2 clusters; Pro/Alpha returns all.
 
     Args:
         token_address: Token contract address

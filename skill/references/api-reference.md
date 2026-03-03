@@ -31,7 +31,7 @@ Authorization: Bearer <API_KEY>
 ```json
 {
   "tier": "free",
-  "daily_limit": 50,
+  "daily_limit": 100,
   "daily_calls_used": 12,
   "daily_calls_remaining": 38
 }
@@ -39,16 +39,16 @@ Authorization: Bearer <API_KEY>
 
 | Tier | Daily Limit |
 |------|-------------|
-| Free | 50 |
-| Pro | 500 |
+| Free | 100 |
+| Pro | 1,000 |
 | Alpha | 5,000 |
 
 ### Rate Limits by Tier
 
 | Tier  | Daily API Calls | Trading Fee | Signal Dashboard | KOL Finder |
 |-------|-----------------|-------------|------------------|------------|
-| Free  | 50 calls/day    | 1%          | No               | No         |
-| Pro   | 500 calls/day   | 0.5%        | Yes              | Yes        |
+| Free  | 100 calls/day   | 1%          | No               | No         |
+| Pro   | 1,000 calls/day | 0.5%        | Yes              | Yes        |
 | Alpha | 5,000 calls/day | 0%          | Yes              | Yes        |
 
 ---

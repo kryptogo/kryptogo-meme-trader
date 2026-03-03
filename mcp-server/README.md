@@ -58,7 +58,7 @@ Add to your config file:
 | Tool | Description |
 |------|-------------|
 | `get_token_overview` | Get comprehensive token overview including price, market cap, and metadata |
-| `analyze_token` | Deep analysis of a token with holder distribution, trading activity, and risk signals |
+| `analyze_token` | Cluster analysis — groups related wallets to reveal insider holdings (free tier: first 2 clusters only) |
 | `get_cluster_trends` | Analyze smart money cluster trends and movements |
 | `get_balance_history` | Track historical balance changes for a wallet |
 | `get_balance_increase` | Identify wallets with significant balance increases |
@@ -76,7 +76,7 @@ Add to your config file:
 | Tool | Description |
 |------|-------------|
 | `get_trending_tokens` | Get currently trending tokens across chains |
-| `get_signal_dashboard` | View real-time trading signals dashboard |
+| `get_signal_dashboard` | Network-wide accumulation signals — tokens where insiders are buying (Pro/Alpha only) |
 | `get_signal_history` | Browse historical trading signals |
 
 ### Portfolio (2)
@@ -113,8 +113,8 @@ Add to your config file:
 
 | Tier | API Calls/Day | Trading Fee | Signals |
 |------|--------------|-------------|---------|
-| Free | 50 | 1% | No |
-| Pro | 500 | 0.5% | Yes |
+| Free | 100 | 1% | No |
+| Pro | 1,000 | 0.5% | Yes |
 | Alpha | 5,000 | 0% | Yes |
 
 ## Security

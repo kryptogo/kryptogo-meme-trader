@@ -66,7 +66,7 @@ npx clawhub install kryptogo-meme-trader
 | ツール | 説明 |
 |--------|------|
 | `get_token_overview` | 価格、時価総額、メタデータを含むトークンの総合概要を取得 |
-| `analyze_token` | ホルダー分布、取引活動、リスクシグナルのトークン詳細分析 |
+| `analyze_token` | クラスター分析 — 関連ウォレットをグループ化してインサイダー保有を可視化（無料版：最初の2クラスターのみ） |
 | `get_cluster_trends` | スマートマネークラスターのトレンドと動向を分析 |
 | `get_balance_history` | ウォレットの残高履歴を追跡 |
 | `get_balance_increase` | 残高が大幅に増加したウォレットを特定 |
@@ -84,7 +84,7 @@ npx clawhub install kryptogo-meme-trader
 | ツール | 説明 |
 |--------|------|
 | `get_trending_tokens` | チェーン横断の現在のトレンドトークンを取得 |
-| `get_signal_dashboard` | リアルタイム取引シグナルダッシュボードを表示 |
+| `get_signal_dashboard` | ネットワーク全体の蓄積シグナル — インサイダーが買い増し中のトークン（Pro/Alpha限定） |
 | `get_signal_history` | 過去の取引シグナルを閲覧 |
 
 ### ポートフォリオ (2)
@@ -121,8 +121,8 @@ npx clawhub install kryptogo-meme-trader
 
 | プラン | 1日あたりの API コール数 | 取引手数料 | シグナル |
 |--------|--------------------------|------------|----------|
-| Free | 50 | 1% | なし |
-| Pro | 500 | 0.5% | あり |
+| Free | 100 | 1% | なし |
+| Pro | 1,000 | 0.5% | あり |
 | Alpha | 5,000 | 0% | あり |
 
 ## セキュリティ

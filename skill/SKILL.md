@@ -112,8 +112,8 @@ All endpoints require: `Authorization: Bearer sk_live_<48 hex chars>`
 
 | Tier  | Daily API Calls | Trading Fee | Signal Dashboard | KOL Finder |
 |-------|-----------------|-------------|------------------|------------|
-| Free  | 50 calls/day    | 1%          | No               | No         |
-| Pro   | 500 calls/day   | 0.5%        | Yes              | Yes        |
+| Free  | 100 calls/day   | 1%          | No               | No         |
+| Pro   | 1,000 calls/day | 0.5%        | Yes              | Yes        |
 | Alpha | 5,000 calls/day | 0%          | Yes              | Yes        |
 
 ---
