@@ -11,6 +11,7 @@
 | 能力 | 說明 | 工具 |
 |---|---|---|
 | **獨家集群偵測** | 精準偵測所有持倉地址中的莊家集群，主力資金是在吸籌還是出貨，一目了然 | `analyze_token` |
+| **多錢包持倉歷史** | 追蹤多個錢包地址在過去一段時間的持倉變化，清晰看出他們是在吸籌還是出貨、具體比例是多少 | `get_balance_history` |
 | **集群持倉趨勢** | 價格橫盤 + 集群持倉上升 = 吸籌（看漲）。價格上漲 + 集群持倉下降 = 出貨（看跌） | `get_cluster_trends` |
 | **隱藏持倉還原** | 精準還原 Jupiter 限價單、DCA 分時買入等隱藏持倉——其他工具顯示已清倉，我們能看到莊家真實籌碼仍在手上 | `get_dca_limit_orders` |
 | **全網吸籌信號** | 一段吸籌捕捉新幣快速吸籌、二段吸籌捕捉成熟幣再次吸籌階段，精準掌握主力動向 | `get_signal_dashboard` |
@@ -107,7 +108,7 @@ claude mcp add kryptogo-meme-trader \
 | `get_token_overview` | 取得代幣綜合概覽，包含價格、市值及元資料 |
 | `analyze_token` | 集群分析 — 將關聯錢包分組以揭示內部持倉（免費版僅顯示前 2 個集群） |
 | `get_cluster_trends` | 分析聰明錢集群趨勢與動向 |
-| `get_balance_history` | 追蹤錢包的歷史餘額變化 |
+| `get_balance_history` | 追蹤多個錢包地址的歷史持倉變化，判斷吸籌或出貨模式及具體比例 |
 | `get_balance_increase` | 識別餘額大幅增加的錢包 |
 | `get_top_holders_snapshot` | 取得代幣前幾大持有者的當前快照 |
 | `get_historical_top_holders` | 查看歷史前幾大持有者資料的時間變化 |
