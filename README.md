@@ -11,6 +11,7 @@ Smart Money Tracking · Whale & Insider Analysis · Whale Monitoring · Signal A
 | Capability | What It Does | Tool |
 |---|---|---|
 | **Proprietary Cluster Detection** | Precisely detect whale clusters among all holding addresses — see through accumulation and distribution at a glance | `analyze_token` |
+| **Multi-Wallet Balance History** | Track historical holding changes across multiple wallet addresses over a given period — clearly see whether they are accumulating or distributing, and the exact proportions | `get_balance_history` |
 | **Cluster Position Trends** | Price sideways + cluster holdings rising = accumulation (bullish). Price rising + cluster holdings dropping = distribution (bearish) | `get_cluster_trends` |
 | **Hidden Position Reconstruction** | Reconstruct hidden positions from Jupiter limit orders and DCA buys — other tools show wallets as empty, we reveal the real holdings | `get_dca_limit_orders` |
 | **Network-wide Accumulation Signals** | First-stage captures rapid accumulation in new tokens, second-stage detects re-accumulation in established tokens | `get_signal_dashboard` |
@@ -107,7 +108,7 @@ claude mcp add kryptogo-meme-trader \
 | `get_token_overview` | Get comprehensive token overview including price, market cap, and metadata |
 | `analyze_token` | Cluster analysis — groups related wallets to reveal insider holdings (free tier: first 2 clusters only) |
 | `get_cluster_trends` | Analyze smart money cluster trends and movements |
-| `get_balance_history` | Track historical balance changes for a wallet |
+| `get_balance_history` | Track historical holding changes across multiple wallets — see accumulation vs distribution patterns and exact proportions |
 | `get_balance_increase` | Identify wallets with significant balance increases |
 | `get_top_holders_snapshot` | Get current snapshot of top token holders |
 | `get_historical_top_holders` | View historical top holder data over time |
